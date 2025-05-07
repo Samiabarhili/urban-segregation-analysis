@@ -27,7 +27,7 @@ Notre analyse repose sur deux grandes étapes complémentaires :
 
 ### 1. Analyse de la composition sociale des aires urbaines
 
-- Calcul des parts de *cadres, **ouvriers, **employés* et *professions intermédiaires* dans chaque AU.
+- Calcul des parts de *cadres*, *ouvriers*, *employés* et *professions intermédiaires* dans chaque AU.
 - Observation de l’évolution de ces parts en fonction de la *taille des aires urbaines* (logarithme de la population).
 - Cette étape permet d’identifier des tendances de *polarisation sociale* selon la taille des territoires.
 
@@ -96,8 +96,7 @@ D'autres éléments influencent fortement la distribution des groupes sociaux da
 
 ## Auteurs
 
-- Samia Barhili  
-- Synthia Tiroumourougane  
-- Hajar Achour  
-- Aline Bouideghaghen  
-- Guillaume Chapelle (enseignant)
+- Synthia   
+- Hajar   
+- Aline   
+- Samia 

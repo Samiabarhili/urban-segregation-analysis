@@ -1,15 +1,15 @@
-# Économie urbaine – Ségrégation sociale et taille des aires urbaines
+# Économie urbaine – Ségrégation socio-spatiale et taille des aires urbaines
 
 ## Objectif du projet
 
-Ce projet vise à explorer s’il existe une relation entre la *taille des aires urbaines (AU)* en France métropolitaine et leur *niveau de ségrégation sociale*.  
-La concentration des populations et des activités dans les villes fait émerger des formes de *séparation spatiale entre groupes sociaux*.  
-Nous interrogeons ici le rôle que joue la taille de l’aire urbaine dans ce phénomène.
+Ce projet vise à explorer s’il existe une relation entre la *taille des aires urbaines (AU)* en France métropolitaine et leur *niveau de ségrégation socio-spatiale*.  
+La concentration des populations et des activités dans les villes soulève la question de la *répartition inégale des groupes sociaux dans l’espace urbain*.  
+Nous interrogeons ici le rôle que joue la taille des aires urbaines dans ce phénomène.
 
 ## Définitions clés
 
 - *Aire urbaine (AU)* : selon l’INSEE, une aire urbaine correspond à un ensemble de communes organisées autour d’un pôle urbain et d’une couronne périurbaine, liée par les flux domicile-travail.
-- *Ségrégation socio-spatiale* : séparation dans l’espace urbain entre groupes sociaux (catégories professionnelles, niveaux de revenus, origine, etc.).
+- *Ségrégation socio-spatiale* : désigne la séparation dans l’espace urbain entre groupes sociaux, selon leur statut socio-économique, leur catégorie professionnelle, ou leur origine.
 
 ## Données utilisées
 
@@ -19,7 +19,7 @@ Nous avons mobilisé trois bases de données publiques de l’INSEE pour l’ann
 - La *composition socioprofessionnelle des actifs de 25 à 54 ans*.
 - La *correspondance entre communes et aires d’attraction des villes* (zonage AAV 2020).
 
-Ces données nous permettent de passer de l’échelle communale à l’échelle des aires urbaines.
+Ces données permettent de passer de l’échelle communale à celle des aires urbaines.
 
 ## Méthodologie
 
@@ -29,21 +29,21 @@ Notre analyse repose sur deux grandes étapes complémentaires :
 
 - Calcul des parts de *cadres, **ouvriers, **employés* et *professions intermédiaires* dans chaque AU.
 - Observation de l’évolution de ces parts en fonction de la *taille des aires urbaines* (logarithme de la population).
-- Cette étape permet de détecter des dynamiques de *polarisation sociale* selon la taille des territoires.
+- Cette étape permet d’identifier des tendances de *polarisation sociale* selon la taille des territoires.
 
-### 2. Mesure de la ségrégation sociale
+### 2. Mesure de la ségrégation socio-spatiale
 
-Pour mesurer la ségrégation sociale, nous utilisons *deux indices complémentaires* :
+Pour évaluer la ségrégation socio-spatiale, nous mobilisons *deux indices complémentaires* :
 
 - *Indice de Duncan* :
-  - Mesure la *séparation spatiale* entre deux groupes (ici : cadres et ouvriers).
-  - Intuitif mais limité car binaire.
+  - Mesure la *séparation spatiale entre deux groupes*, ici cadres et ouvriers.
+  - Outil simple, mais binaire : il ne capture qu’un axe de la ségrégation.
 
 - *Indice d’entropie* :
-  - Mesure la *diversité sociale globale* au sein de chaque AU (toutes les CSP).
-  - Plus riche mais ne reflète pas directement la séparation spatiale.
+  - Mesure la *diversité sociale globale* en intégrant toutes les catégories socioprofessionnelles.
+  - Reflète la pluralité sociale d’un territoire, sans pour autant décrire la répartition géographique fine.
 
-Ces deux outils permettent de croiser *polarisation entre groupes extrêmes* et *richesse sociale interne* des territoires.
+Ces deux indicateurs permettent de combiner une lecture binaire et une lecture multidimensionnelle de la ségrégation.
 
 ## Résultats
 
@@ -51,40 +51,39 @@ Ces deux outils permettent de croiser *polarisation entre groupes extrêmes* et 
 
 - La *part de cadres* augmente avec la taille de l’AU.
 - La *part d’ouvriers* diminue dans les grandes villes.
-- Cela traduit une certaine *hiérarchisation sociale* liée à la taille des aires.
+- Cela reflète une certaine *hiérarchisation sociale* croissante selon la taille des aires urbaines.
 
-### Ségrégation sociale
+### Ségrégation socio-spatiale
 
-- L’*indice de Duncan* augmente légèrement avec la taille des AU (R² ≈ 4%).  
-  → Faible corrélation : la taille explique peu la ségrégation binaire.
-  
-- L’*indice d’entropie* croît plus nettement avec la taille (R² ≈ 27%).  
-  → Les grandes villes sont plus *diversifiées, mais cela ne signifie pas qu’il y a plus de **mixité spatiale*.
+- L’*indice de Duncan* augmente légèrement avec la taille des AU (*R² ≈ 4%*).  
+  → Cela montre une séparation sociale modérément accentuée dans les grandes villes.
+
+- L’*indice d’entropie* croît plus nettement avec la taille (*R² ≈ 27%*).  
+  → Les grandes aires sont plus *diversifiées socialement*, mais cela ne garantit pas une meilleure mixité spatiale.
 
 ### Étude de cas
 
 - *Paris* : forte séparation entre quartiers riches (ouest/centre) et pauvres (nord/est), selon un modèle *monocentrique*.
-- *Rennes* : structure plus *mixte et équilibrée*, grâce à des politiques urbaines locales.
+- *Rennes* : structure plus *équilibrée*, illustrant le rôle des politiques urbaines dans la réduction de la ségrégation.
 
 ## Limites de l’étude
 
-- L’indice de Duncan est binaire : il ne prend en compte que deux groupes.
-- L’indice d’entropie mesure la diversité mais pas la *localisation spatiale* précise des groupes.
-- Analyse *statique*, fondée sur une année unique (2021).
-- D’autres facteurs clés ne sont pas intégrés : logement, transports, offre scolaire, histoire urbaine, politiques publiques.
+- L’indice de Duncan est binaire : il ne mesure qu’une forme de ségrégation.
+- L’indice d’entropie capte la diversité sociale mais *pas la répartition spatiale précise*.
+- L’analyse est *statique* (année 2021 uniquement).
+- Plusieurs facteurs clés sont absents : politiques publiques locales, histoire urbaine, transports, offre scolaire, logement, etc.
 
 ## Ouverture
 
-La taille des aires urbaines n’est qu’un *facteur partiel* de la ségrégation sociale.  
-D'autres variables contribuent fortement aux dynamiques sociales urbaines, comme :
+La taille des aires urbaines n’est qu’un *facteur partiel* dans l’explication de la ségrégation socio-spatiale.  
+D'autres éléments influencent fortement la distribution des groupes sociaux dans l’espace urbain, notamment :
 
 - Les *écarts de revenus*
-- Les *réseaux de transport*
 - Les *dynamiques immobilières*
+- Les *réseaux de transport*
 - L’*histoire du développement urbain*
 - Les *politiques locales de mixité*
-
-Ces éléments doivent être explorés pour enrichir la compréhension du phénomène.
+- L’*offre scolaire et les services publics*
 
 ## Références
 
@@ -97,8 +96,8 @@ Ces éléments doivent être explorés pour enrichir la compréhension du phéno
 
 ## Auteurs
 
-  
-- Synthia  
-- Hajar  
-- Aline
-- Samia  
+- Samia Barhili  
+- Synthia Tiroumourougane  
+- Hajar Achour  
+- Aline Bouideghaghen  
+- Guillaume Chapelle (enseignant)
